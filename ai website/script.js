@@ -20,6 +20,16 @@ const products = [
     { id: 13, name: "Minimalist Trench Coat", category: "outerwear", price: 180.00, image: "images/outerwear3.jpg", colors: ["#EBE5D8"] },
     { id: 14, name: "Puffer Vest", category: "outerwear", price: 120.00, image: "images/outerwear4.jpg", colors: ["#111111", "#FFFFFF"] },
     { id: 15, name: "Structured Boxy Blazer", category: "outerwear", price: 160.00, image: "images/outerwear5.jpg", colors: ["#111111"] }
+    {id: 15, name: "Structured Boxy Blazer", category: "outerwear", price: 160.00, image: "images/outerwear5.jpg", colors: ["#111111"]},
+    {
+        id: 16,
+        name: "Men's Heavy Corduroy Shirt Long Sleeve Shirt",
+        category: "outerwear",
+        price: 19.99,
+        image: "https://cc-west-usa.oss-us-west-1.aliyuncs.com/cjdropshipping/25/25012107/2501210736421612000_0.jpg",
+        cjProductId: "2501210736421612000",
+        cjVariantId: "CJDS227599515OL"
+    }
 ];
 
 let cart = [];
