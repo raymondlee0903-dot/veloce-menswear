@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V E L O C E — Menswear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar Menu -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h2>V E L O C E</h2>
+            <button id="close-sidebar" class="mobile-only">&times;</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="filterProducts('all')">All Products</a></li>
+            <li class="has-submenu">
+                <a href="#" id="toggle-categories" class="submenu-toggle">
+                    Categories <span class="arrow">&#9662;</span>
+                </a>
+                <ul class="submenu" id="categories-submenu">
+                    <li><a href="#" onclick="filterProducts('shirts')">Shirts</a></li>
+                    <li><a href="#" onclick="filterProducts('pants')">Pants</a></li>
+                    <li><a href="#" onclick="filterProducts('outerwear')">Outerwear</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <header>
+            <button id="open-sidebar" class="mobile-only">&#9776;</button>
+            <div class="logo-mobile mobile-only">V E L O C E</div>
+            <button id="cart-btn">
+                Cart [<span id="cart-count">0</span>]
+            </button>
+        </header>
+
+        <div class="hero-section">
+            <h1 id="hero-title">All Products</h1>
+            <p>Minimalist luxury essentials designed in monochrome and neutral tones.</p>
+        </div>
+
+        <section class="product-grid" id="products-container">
+            <!-- Products will be injected here by JavaScript -->
+        </section>
+    </main>
+
+    <!-- Slide-out Cart Modal -->
+    <div id="cart-overlay" class="hidden">
+        <div id="cart-modal">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button id="close-cart">&times;</button>
+            </div>
+            <div id="cart-items">
+                <!-- Cart items will appear here -->
+            </div>
+            <div class="cart-footer">
+                <div class="total-row">
+                    <span>Subtotal</span>
+                    <span>$<span id="cart-total">0.00</span></span>
+                </div>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
