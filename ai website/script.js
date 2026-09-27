@@ -158,7 +158,7 @@ renderProducts();
 
 // Fetch Printify Products dynamically
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('/api/products')
+    fetch('/ai website/api/products')
         .then(res => res.json())
         .then(data => {
             const printifyItems = data.data || [];
