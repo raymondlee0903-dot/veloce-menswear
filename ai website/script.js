@@ -156,9 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Initial Render
 renderProducts();
 
-// Fetch Printify Products dynamically
+// Fetch Printify Products dynamically using absolute URL matching your deployment domain
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('/ai website/api/products')
+    fetch('https://velocemenswear.vercel.app/api/products')
         .then(res => res.json())
         .then(data => {
             const printifyItems = data.data || [];
